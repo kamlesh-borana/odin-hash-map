@@ -119,7 +119,7 @@ class HashMap {
     }
 
     if (this.hashMap[bucketIndex].head?.nextNode === null) {
-      this.hashMap[bucketIndex].head = this.hashMap[bucketIndex].head.nextNode;
+      this.hashMap[bucketIndex].pop();
       this.currentLoadCount--;
 
       return true;

@@ -99,7 +99,10 @@ class LinkedList {
     }
 
     if (this.#header.nextNode === null) {
+      const removedNode = this.#header;
       this.#header = null;
+
+      return removedNode;
     }
 
     let tempHead = this.#header;
