@@ -1,4 +1,5 @@
 import HashMap from "./hashMap.js";
+import HashSet from "./hashSet.js";
 
 const hashMap = new HashMap();
 
@@ -59,3 +60,33 @@ console.log(hashMap.entries());
 
 hashMap.clear();
 console.log(hashMap);
+
+const hashSet = new HashSet();
+hashSet.set("one");
+hashSet.set("two");
+hashSet.set("three");
+hashSet.set("four");
+hashSet.set("five");
+hashSet.set("six");
+hashSet.set("seven");
+hashSet.set("eight");
+hashSet.set("nine");
+hashSet.set("ten");
+hashSet.set("eleven");
+hashSet.set("twelve");
+
+hashSet.set("seven");
+
+hashSet.set("thirteen");
+
+console.log(hashSet.get("seven"));
+console.log(hashSet.has("eleven"));
+
+console.log(hashSet.remove("thirteen"));
+console.log(hashSet.length());
+
+console.log(hashSet);
+console.log(hashSet.values());
+
+hashSet.clear();
+console.log(hashSet);
